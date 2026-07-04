@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["86XQQX3A54.com.illetro.presidents"],
+        "components": [
+          { "/": "/presidents/join*", "comment": "Presidents & A-Holes join-room links" }
+        ]
+      }
+    ]
+  }
+}
