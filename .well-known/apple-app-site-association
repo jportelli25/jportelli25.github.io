@@ -10,6 +10,9 @@
     ]
   },
   "appclips": {
-    "apps": ["86XQQX3A54.com.illetro.presidents.Clip"]
+    "apps": [
+      "86XQQX3A54.com.illetro.presidents.Clip",
+      "86XQQX3A54.com.illetro.surge.Clip"
+    ]
   }
 }
