@@ -11,5 +11,17 @@
         "98:F6:8F:87:A8:D7:60:8C:34:94:71:E7:F5:B7:09:8D:DE:44:E6:72:88:41:C6:FC:C5:C5:79:7B:32:54:95:A2"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.illetro.tienlen13",
+      "sha256_cert_fingerprints": [
+        "20:B6:A5:CB:58:07:7A:4B:55:6A:B2:51:7E:1A:19:D0:20:BF:A9:27:E7:34:5C:76:45:F4:99:F8:56:24:70:B2"
+      ]
+    }
   }
 ]
