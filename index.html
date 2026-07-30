@@ -17,11 +17,13 @@
            margin:0; color:var(--ink); line-height:1.6; background:#fff; }
     .hero { text-align:center; padding:90px 18px 70px;
             background:linear-gradient(160deg,#f5f9ff 0%,#e8f1ff 60%,#dbeafe 100%); }
-    .wordmark { font-size:3.4rem; font-weight:800; letter-spacing:-1px; margin:0;
+    .wordmark { font-size:5.2rem; font-weight:800; letter-spacing:-2px; margin:0; line-height:1.05;
                 background:linear-gradient(90deg,var(--blue),var(--sky));
                 -webkit-background-clip:text; background-clip:text; color:transparent; }
-    .hero p { font-size:1.2rem; color:#3b4a63; max-width:560px; margin:.6em auto 0; }
-    .tag { color:var(--blue); letter-spacing:4px; font-weight:600; text-transform:uppercase; font-size:.85rem; }
+    .tagline { color:var(--blue); letter-spacing:5px; font-weight:600; text-transform:uppercase;
+               font-size:.95rem; margin:.7em 0 0; }
+    .hero p.blurb { font-size:1.1rem; color:#3b4a63; max-width:560px; margin:1.2em auto 0; }
+    @media (max-width:480px){ .wordmark { font-size:3.6rem; } }
     .wrap { max-width:960px; margin:0 auto; padding:56px 18px; }
     h2 { font-size:1.6rem; margin:0 0 .3em; }
     .sub { color:var(--muted); margin:0 0 1.6em; }
@@ -30,8 +32,8 @@
            background:#f5f8ff; border:1px solid #e3ebfb; border-radius:18px; padding:20px;
            transition:transform .15s ease, box-shadow .15s ease; }
     .app:hover { transform:translateY(-3px); box-shadow:0 10px 24px rgba(37,99,235,.12); }
-    .tile { flex:0 0 56px; height:56px; border-radius:14px; display:flex; align-items:center;
-            justify-content:center; font-size:1.7rem; color:#fff; }
+    .tile { flex:0 0 64px; width:64px; height:64px; border-radius:15px; object-fit:cover;
+            box-shadow:0 4px 10px rgba(28,36,51,.15); }
     .app h3 { margin:0 0 .15em; font-size:1.08rem; }
     .app h3 span { color:var(--blue); font-size:.95em; }
     .app p { margin:0; font-size:.92rem; color:#4b5872; }
@@ -47,9 +49,9 @@
 <body>
 
   <section class="hero">
-    <div class="tag">illetro</div>
-    <h1 class="wordmark">power up your play</h1>
-    <p>Polished little apps — classic card games you can play solo or online with friends, and tools that keep you moving. Free on iPhone and Android.</p>
+    <h1 class="wordmark">illetro</h1>
+    <p class="tagline">power up your play</p>
+    <p class="blurb">Polished little apps — classic card games you can play solo or online with friends, and tools that keep you moving. Free on iPhone and Android.</p>
   </section>
 
   <div class="wrap" id="apps">
@@ -58,7 +60,7 @@
     <div class="grid">
 
       <a class="app" href="/13/">
-        <div class="tile" style="background:linear-gradient(145deg,#1E6336,#0D2E19)">🂡</div>
+        <img class="tile" src="assets/icon-13.png" alt="Tiến Lên 13 app icon">
         <div>
           <h3>Tiến Lên 13 <span>›</span></h3>
           <p>The classic Vietnamese climbing card game — race to empty your hand against smart AI or friends online.</p>
@@ -67,7 +69,7 @@
       </a>
 
       <a class="app" href="/presidents/">
-        <div class="tile" style="background:linear-gradient(145deg,#b45309,#7c2d12)">👑</div>
+        <img class="tile" src="assets/icon-presidents.png" alt="Presidents &amp; A-Holes app icon">
         <div>
           <h3>Presidents &amp; A-Holes <span>›</span></h3>
           <p>Multi-round matches with roles and a card exchange — climb from A-Hole to President, or fall trying.</p>
@@ -76,7 +78,7 @@
       </a>
 
       <a class="app" href="/QueenB/">
-        <div class="tile" style="background:linear-gradient(145deg,#7c3aed,#4c1d95)">🐝</div>
+        <img class="tile" src="assets/icon-queenb.png" alt="The Queen B app icon">
         <div>
           <h3>The Queen B <span>›</span></h3>
           <p>A 54-card twist where the Queen of Spades rules and wild jokers shake up every hand.</p>
@@ -85,7 +87,7 @@
       </a>
 
       <a class="app" href="/Basra/">
-        <div class="tile" style="background:linear-gradient(145deg,#0e7490,#164e63)">🎣</div>
+        <img class="tile" src="assets/icon-basra.png" alt="Basra app icon">
         <div>
           <h3>Basra <span>›</span></h3>
           <p>The beloved Middle Eastern fishing game — capture cards from the floor and sweep for bonus points.</p>
@@ -94,7 +96,7 @@
       </a>
 
       <a class="app" href="/surge/">
-        <div class="tile" style="background:linear-gradient(145deg,#38bdf8,#2563eb)">⚡️</div>
+        <img class="tile" src="assets/icon-surge.png" alt="Surge Training app icon">
         <div>
           <h3>Surge Training <span>›</span></h3>
           <p>An interval &amp; HIIT timer with a natural voice coach that calls every exercise and rest.</p>
