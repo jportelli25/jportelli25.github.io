@@ -1,11 +1,13 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.illetro.presidents",
       "sha256_cert_fingerprints": [
-        "REPLACE_WITH_PLAY_APP_SIGNING_SHA256"
+        "98:F6:8F:87:A8:D7:60:8C:34:94:71:E7:F5:B7:09:8D:DE:44:E6:72:88:41:C6:FC:C5:C5:79:7B:32:54:95:A2"
       ]
     }
   }
